@@ -9,6 +9,20 @@
     border: none;
 }
 
+/* Button style */
+.toggle {
+
+    width: 50px;
+height: 30px;
+background: transparent;
+margin-left: auto;
+display: none;
+}
+
+.toggle:active{
+ 
+}
+
 .topo {
     background-image: url(../img/bg-topo.jpg);
     background-size: cover;
@@ -505,15 +519,58 @@
 
 /*MediasQuery*/
 @media (max-width:735px) {
+    .dflex{
+        display: flex !important;
+
+    }
+
+    .toggle{
+        display: block;
+
+    }
     .content {
         padding: 0px 15px;
     }
 
     .menu ul {
-        display: none;
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        color: rgb(255, 255, 255);
+        z-index: 12;
+        height: 200px;
+        
+        
     }
+    .menu ul li{
+        margin-top: 20px;
+       
+    }
+    .menu ul li a{
+        color: rgb(255, 255, 255);
+    }
+    .menu{
+        
+        top: 20%;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 50vh;
+        background: rgba(0, 0, 0, 0.9);
+        box-shadow: 0 0 20px 50px rgba(255, 255, 255, 0.5);  
+        z-index: 10;
+        display: none;
+        justify-content: center;
+        align-items: center;
 
+    }
+    .get-start{
+        background: transparent !important;
+        border: none !important;
+       
+    }
     .topo {
+        
         height: 100vh
     }
 
@@ -648,7 +705,7 @@
     }
 
     .down-now-box p {
-        font-size: 0.8em;
+        font-size: 12px;
         margin: 25px;
     }
 
@@ -681,6 +738,6 @@
     }
 
     .prices-plan p {
-        font-size: 0.8em;
+        font-size: 12px;
     }
 }
