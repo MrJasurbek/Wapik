@@ -19,10 +19,6 @@ margin-left: auto;
 display: none;
 }
 
-.toggle:active{
- 
-}
-
 .topo {
     background-image: url(../img/bg-topo.jpg);
     background-size: cover;
