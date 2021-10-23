@@ -489,23 +489,7 @@ display: none;
     width: 100%;
 }
 
-::-webkit-input-placeholder {
-    color: #83a7a5;
-}
 
-::-moz-placeholder {
-    color: #83a7a5;
-}
-
-/* Firefox 18- */
-::-moz-placeholder {
-    color: #83a7a5;
-}
-
-/* Firefox 19+ */
-::-ms-input-placeholder {
-    color: #83a7a5;
-}
 
 .form-news img {
     position: absolute;
@@ -576,6 +560,7 @@ display: none;
     .get-start{
         background: transparent !important;
         border: none !important;
+        
        
     }
     .topo {
