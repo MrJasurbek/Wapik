@@ -8,7 +8,8 @@ hamburger.addEventListener("click", ()=>{
     menu.classList.toggle("dflex")
     if (menu.classList.contains("dflex")){
         img.src="./img/close_black_24dp.svg"
-    } else 
+    } 
+    else 
     {
         img.src="./img/menu_black_24dp.svg"
     }

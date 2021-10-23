@@ -12,7 +12,7 @@
 /* Button style */
 .toggle {
 
-    width: 50px;
+width: 50px;
 height: 30px;
 background: transparent;
 margin-left: auto;
@@ -28,7 +28,6 @@ display: none;
     background-size: cover;
     background-position: center center;
     height: 80vh;
-
 }
 
 .content {
@@ -49,8 +48,19 @@ display: none;
 .logo {
     color: #fff;
     font-size: 1.2em;
+    display: flex;
+    flex-direction: row;
+   
+}
+.logo h1{
+    margin-right: 15px;
+    border-right: 3px solid white;
+    padding-right: 10px;
 }
 
+.logo h5{
+    font-weight: 100;  
+}
 .menu ul {
     display: flex;
 }
@@ -518,7 +528,7 @@ display: none;
 }
 
 /*MediasQuery*/
-@media (max-width:735px) {
+@media (max-width:755px) {
     .dflex{
         display: flex !important;
 
@@ -550,7 +560,6 @@ display: none;
         color: rgb(255, 255, 255);
     }
     .menu{
-        
         top: 20%;
         left: 0;
         position: absolute;
@@ -740,4 +749,24 @@ display: none;
     .prices-plan p {
         font-size: 12px;
     }
+}
+
+@media (max-width:940px) {
+    .logo h5{
+        display: none;
+    }
+   
+}
+
+@media (max-width:777px) {
+    .logo p{
+        display: none;
+    }
+    .logo h1{
+        border: none;
+    }
+
+    .logo{margin: 0;
+    padding: 0;}
+   
 }
